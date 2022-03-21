@@ -1,0 +1,179 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8cm;
+  color: #666;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 30px;
+  justify-content: space-evenly;
+  z-index: 1;
+  background: transparent;
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.faviconLink {
+  position: relative;
+  transform: translate(12px, 12px);
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.base {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pimg1 {
+  background-image: url("../images/pexels-abdul-kayum-10845119.jpg");
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url("../images/pexels-james-wheeler-1519088.jpg");
+  min-height: 100%;
+}
+.pimg3 {
+  background-image: url("../images/pexels-benjamin-suter-3617464.jpg");
+  min-height: 100%;
+}
+.pimg4 {
+  background-image: url("../images/pexels-pixabay-45182.jpg");
+  min-height: 100%;
+}
+
+.base {
+  text-align: center;
+  background-color: #282e34;
+  color: #ddd;
+  font-size: 50px;
+}
+
+.section {
+  text-align: left;
+  padding: 10px 150px;
+  font-size: 30px;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.section-bottom {
+  background-color: #282e34;
+  color: #ddd;
+  z-index: -1;
+}
+.section-title {
+  text-decoration: underline;
+  font-size: 50px;
+  text-align: center;
+}
+.section-text {
+  text-align: center;
+  font-size: 30px;
+}
+.section-email {
+  text-align: center;
+}
+.projects-title {
+  text-align: Left;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.goToTop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #666;
+  bottom: 40px;
+  right: 50px;
+  padding-top: 10px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #ddd;
+  font-size: 40px;
+}
+
+.emailButton {
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 30px;
+  color: #fff;
+  height: 60px;
+  width: 150px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.emailButton:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.smButton {
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 30px;
+  color: #fff;
+  height: 75px;
+  width: 250px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.smButton:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
+  }
+}
